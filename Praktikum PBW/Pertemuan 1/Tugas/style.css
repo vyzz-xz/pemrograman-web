@@ -2,7 +2,6 @@ body {
     margin: 10px 450px;
     padding: 40px 60px;
     font-family: 'Poppins', sans-serif;
-    background-color: white;
 }
 
 .category {
@@ -31,8 +30,13 @@ h3 {
 }
 
 .list {
-    color: rgb(0, 140, 255);
+    color: #333;
     font-size: 12px;
+}
+
+.list li:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 h2 {
