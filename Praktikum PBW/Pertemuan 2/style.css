@@ -1,63 +1,67 @@
-*{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background-color: #f6f6f6;
-    padding: 40px;
+.no1 {
+  padding-top: 32px;
+  height: 100vh; /* biar tingginya full selayar */
+  background-color: white;
+  display: flex; /* ngubah ukuran elemen jadi seukuran konten elemennya dan ga mentok selebar satu layar. Biar lebih gampang di-styling juga */
+  flex-direction: column; /* karena elemennya seukuran konten, jadi mereka bakal jadi baris. Bukan kolom. Lewat command ini, mereka jadi kolom */
+  align-items: center; /* ini problem tadi wkwk. Ini biar semua elemennya center */
 }
 
-.container {
-    max-width: 400px;
-    margin: auto;
+.formarea {
+  width: 40vw; /* ukuran input di form biar sesuai modul */
 }
 
 .title {
-    text-align: center;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
 }
 
-.form-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+.inputarea {
+  /* penjelasan flex besikli sama yaa */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    padding: 5px;
+.inputarea .input-label {
+  font-size: 12px;
+  margin-bottom: 4px;
 }
 
-.form-textarea textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
+.radio-choice {
+  font-size: 12px;
 }
 
-.form-group label {
-    display: flex;
-    margin-bottom: 10px;
+input,
+textarea,
+select {
+  padding: 4px 2px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
 }
 
-input, select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
+button {
+  font-weight: 700;
+  padding: 8px 12px;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
-.radio-group {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    margin-left: 0px;
-}
-
-.btn-submit {
-    margin-top: 20px;
-    width: 50%;
-    padding: 10px;
-    background-color: lightskyblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
+button:hover {
+  font-weight: 700;
+  background-color: transparent;
+  color: green;
+  border: solid 1.5px green;
+  transition: ease-in-out 0.5s; /* ngatur transisi biar animasi hovernya mulus */
+  transform: translateY(-5px); /* ngubah lokasi berdasarkan sumbu y */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ngasih shadow. Arti 0px dan seterusnya itu: 0px = posisi shadow berdasarkan sumbu x. 4px = posisi shadow berdasarkan sumbu y. 8px = seberapa blur shadow. rgba (red, green, blue, alpha (alpha adalah seberapa transparan)) */
 }

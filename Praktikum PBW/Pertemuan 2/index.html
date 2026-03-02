@@ -1,48 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 2</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="title">Pendaftaran Mahasiswa Baru</h1>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 2 - HTML CSS Lanjutan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- class no1 buat container jawaban soal no 1 biar lebih gampang styling -->
+    <main class="no1">
+        <!-- konten utama (jawaban no 1) -->
+      <div class="formarea">
+        <h1 class="title">Pendaftaran Mahasiswa Baru</h1>
         <form action="" method="get">
-        <div class="form-group">
-            <label>NPM (Nomor Pokok Mahasiswa)</label>
-            <input type="text" placeholder="Masukkan NPM">
-        </div>
-
-        <div class="form-group">
-            <label>Nama Lengkap</label>
-            <input type="text" placeholder="Masukkan nama lengkap">
-        </div>
-
-        <div class="form-textarea">
-            <label>Alamat</label>
-            <textarea placeholder="Masukkan alamat lengkap"></textarea>
-        </div>
-
-        <div class="form-group">
-            <label>Jenis Kelamin</label>
-            <div class="radio-group">
-                <input type="radio" name="jk"> Pria
-                <input type="radio" name="jk"> Wanita
+          <div class="inputarea">
+            <label class="input-label" for="npm"
+              >NPM (Nomor Pokok Mahasiswa)</label
+            >
+            <input type="text" name="npm" id="npm" />
+          </div>
+          <div class="inputarea">
+            <label class="input-label" for="nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama" />
+          </div>
+          <div class="inputarea">
+            <label class="input-label" for="alamat">Alamat</label>
+            <textarea name="alamat" id="alamat" rows="5"></textarea>
+          </div>
+          <div class="inputarea">
+            <label class="input-label" for="jk">Jenis Kelamin</label>
+            <div class="pria">
+              <input type="radio" name="jk" id="pria" value="pria" />
+              <label class="radio-choice" for="pria">Pria</label>
             </div>
-        </div>
-
-        <div class="form-group-select">
-            <label>Program Studi</label>
-            <select>
-                <option value="ti">Teknik Informatika</option>
-                <option value="si">Sistem Informasi</option>
+            <div class="wanita">
+              <input type="radio" name="jk" id="wanita" value="wanita" />
+              <label class="radio-choice" for="wanita">Wanita</label>
+            </div>
+          </div>
+          <div class="inputarea">
+            <label class="input-label" for="prodi">Program Studi</label>
+            <select name="jurusan" id="jurusan">
+              <option value="Informatika">Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
             </select>
-        </div>
-
-        <button class="btn-submit">Daftar</button>
+          </div>
+          <button type="submit" id="tambah">Tambah</button>
         </form>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
