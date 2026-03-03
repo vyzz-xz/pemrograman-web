@@ -1,31 +1,31 @@
 body {
     margin: 0;
-    background-color: white;
+    background-color: white;/* background putih */
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    width: 550px;
-    margin: 10px auto;
-    background-color: #ffffff;
-    padding: 50px 70px;
+    width: 550px; /* lebar konten */
+    margin: 10px auto; /* pakai auto biar ke tengah */
+    background-color: #ffffff; /* warna putih isi container */
+    padding: 50px 70px; /* jarak dalam container */
 }
 
 /* Category */
 .category {
-    text-align: center;
-    font-size: 12px;
+    text-align: center; /* rata tengah */
+    font-size: 12px; /* ukuran font */
     color: #888;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* jarak bawah */
 }
 
 /* Main Title */
 h1 {
-    text-align: center;
+    text-align: center; /* rata tengah */
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 800; /* ngatur tebal font */
     color: #0f172a;
-    margin: 0;
+    margin: 0; /* buat ngilangin margin default */
 }
 
 /* Author */
@@ -33,25 +33,25 @@ h1 {
     text-align: center;
     font-size: 12px;
     color: #888;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 10px; /* ngatur jarak atas */
+    margin-bottom: 40px; /* ngatur jarak bawah */
 }
 
 /* Daftar Isi */
 h3 {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* ngatur jarak bawah */
 }
 
 .list {
     font-size: 14px;
-    color: #2563eb;
-    margin-bottom: 30px;
+    color: #333;
+    margin-bottom: 10px; /* ngatur jarak bawah */
 }
 
-.list li {
-    margin-bottom: 6px;
-    cursor: pointer;
+.list li span {
+    color: #2563eb;
+    cursor: pointer; /* buat ngubah cursor jadi pointer */
 }
 
 /* Subheading */
@@ -66,14 +66,14 @@ h2 {
 p {
     font-size: 14px;
     line-height: 1.8;
-    text-align: justify;
+    text-align: justify; /* buat rata kanan kiri */
     color: #333;
 }
 
 /* Drop Cap */
 .dropcap {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 36px; /* buat ngatur ukuran font */
+    font-weight: 700; /* buat ngatur tebal font */
+    line-height: 1; /* buat ngatur jarak antara drop cap dan teks */
     color: #111827;
 }
