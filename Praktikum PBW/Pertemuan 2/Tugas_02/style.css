@@ -17,7 +17,7 @@ h1 {
 table {
     width: 100%; /* Biar tabelnya memenuhi lebar kontainer */
     border-collapse: collapse; /* Menghilangkan jarak antar border */
-    font-size: 13px;
+    font-size: 10px;
 }
 
 /* Mengatur styling untuk sel header & sel data */

@@ -6,7 +6,7 @@
 }
 
 .gambar {
-    width: 400px; /* Buat ngatur lebar gambar */
-    height: 400px; /* Buat ngatur tinggi gambar */
+    width: 300px; /* Buat ngatur lebar gambar */
+    height: 300px; /* Buat ngatur tinggi gambar */
     object-fit: cover; /* Biar gambar yang persegi tidak distorsi */
 }
