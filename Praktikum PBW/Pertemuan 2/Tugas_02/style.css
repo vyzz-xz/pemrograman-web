@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px; /* Buat ngatur jarak tepi halaman */
+    color: #333;
+}
+
+/* Mengatur judul tabel */
+h1 {
+    text-align: center; /* Biar judulnya di tengah */
+    font-weight: 500px; /* Biar judulnya agak tebal */
+    color: #333;
+    margin-bottom: 20px; /* Buat ngatur jarak antara judul sama tabel */
+    font-size: 24px; /* Ukuran font */
+}
+
+/* Mengatur styling tabel */
+table {
+    width: 100%; /* Biar tabelnya memenuhi lebar kontainer */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    font-size: 13px;
+}
+
+/* Mengatur styling untuk sel header & sel data */
+th, td {
+    border: 1px solid #e0e0e0; /* Warna garis batas */
+    padding: 15px 5px; /* Jarak teks dengan garis batas */
+    text-align: center; /* Teks berada di tengah secara default */
+}
+
+/* Mengatur tebal huruf */
+th { 
+    font-weight: bold; /* Biar headernya tebal */
+    color:#333;
+}
+
+.text {
+    text-align: left; /* Biar teksnya rata kiri */
+    width: 1%; /* Agar kolom NPM dan Nama Lengkap hanya selebar kontennya */
+    white-space: nowrap; /* Mencegah teks membungkus */
+    padding-right: 20px; /* Buat ngatur jarak antara teks dengan garis batas kanan */
+    padding-left: 15px; /* Buat ngatur jarak antara teks dengan garis batas kiri */
+}
+
+td {
+    color: #333;
+}

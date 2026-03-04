@@ -1,0 +1,12 @@
+.container {
+    display: grid; /* Buat ngatur jadi grid */
+    grid-template-columns: repeat(3, max-content); /* Buat 3 kolom dengan lebar sesuai konten */
+    gap: 10px; /* Buat ngatur jarak antar elemen */
+    padding: 30px; /* Buat ngatur jarak antara kontainer dengan tepi halaman */
+}
+
+.gambar {
+    width: 400px; /* Buat ngatur lebar gambar */
+    height: 400px; /* Buat ngatur tinggi gambar */
+    object-fit: cover; /* Biar gambar yang persegi tidak distorsi */
+}
