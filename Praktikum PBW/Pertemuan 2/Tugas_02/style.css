@@ -34,7 +34,7 @@ th {
 }
 
 .text {
-    text-align: left; /* Biar teksnya rata kiri */
+    text-align: center; /* Biar teksnya ditengah */
     width: 1%; /* Agar kolom NPM dan Nama Lengkap hanya selebar kontennya */
     white-space: nowrap; /* Mencegah teks membungkus */
     padding-right: 20px; /* Buat ngatur jarak antara teks dengan garis batas kanan */
