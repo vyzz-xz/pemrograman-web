@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertemuan 3 - Bootstrap</title>
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    
 </head>
 <body>
-    <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 mb-5 sticky-top">
-        <div class="container">
 
-            <!-- Menu Kiri -->
+    <!-- NAVBAR SECTION -->
+    <!-- navbar-expand-lg: navbar akan collapse jadi hamburger di layar < lg -->
+    <!-- bg-white: background putih | shadow-sm: bayangan tipis biar keliatan elegan -->
+    <!-- py-3: padding atas bawah | mb-5: buat margin bawah biar ada jarak ke konten -->
+    <!-- sticky-top: navbar nempel di atas saat halaman di-scroll -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 mb-5 sticky-top">
+        <div class="container"> <!-- container: biar konten ga melebar penuh, ada margin kiri kanan -->
+
+            <!-- navbar-brand: styling khusus untuk logo/nama brand -->
+            <!-- fw-bold: font tebal | fs-4: ukuran font agak besar -->
             <a class="navbar-brand fw-bold fs-4" href="#">
+                <!-- bi bi-controller: ngambil icon dari Bootstrap Icons -->
                 <i class="bi bi-controller" style="color: #007bff;"></i> GadgetTech
             </a>
             
-            <!-- Menu Kanan -->
+            <!-- collapse navbar-collapse: bagian ini yang disembunyikan saat layar kecil -->
             <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ms-auto: buat dorong menu ke kanan | fw-semibold: font agak tebal -->
                 <ul class="navbar-nav ms-auto fw-semibold">
                     <li class="nav-item">
+                        <!-- active: buat ngasih tanda halaman ini lagi aktif | text-primary: warna biru -->
                         <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <!-- text-secondary: warna abu-abu -->
                         <a class="nav-link text-secondary" href="#">About</a>
                     </li>
                     <li class="nav-item">
@@ -38,100 +49,118 @@
     </nav>
 
 
-<div class="container mb-5">
-    <div class="row justify-content-center g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="xiaomi.png" class="card-img-top" alt="Moon" style="height: 275px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Xiaomi G24i Gaming Monitor</h5>
-                    <p class="card-text text-secondary">Monitor gaming 24 inci Full HD 1080p, refresh rate 180Hz, 
-                        panel IPS dengan response time 1ms, AMD FreeSync Premium untuk gameplay yang mulus.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
+    <!-- CARD SECTION -->
+    <!-- mb-5: jarak bawah section card -->
+    <div class="container mb-5">
+        <!-- row: baris grid Bootstrap | justify-content-center: biar card di tengah -->
+        <!-- g-4: buat ngatur gap antar card -->
+        <div class="row justify-content-center g-4">
 
-        <!-- Card 2 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="mouse.jpg" class="card-img-top" alt="Moon">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Logitech G Pro X Superlight 2</h5>
-                    <p class="card-text text-secondary">Mouse gaming ultralight hanya 60g, sensor HERO 25K presisi tinggi, 
-                        cocok untuk FPS kompetitif dengan respons click 40% lebih cepat.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+            <!-- col-md-4: tiap card ambil 4 kolom (jadi 3 card per baris) di layar medium ke atas -->
+            <div class="col-md-4">
+                <!-- h-100: biar tinggi card sama | border-0: buat ngehapus border default | shadow-sm: bayangan tipis -->
+                <div class="card h-100 border-0 shadow-sm">
+                    <!-- object-fit: cover: biar gambar di crop rapi tanpa distorsi -->
+                    <img src="xiaomi.png" class="card-img-top" alt="Monitor" style="height: 275px; object-fit: cover;">
+                    <div class="card-body">
+                        <!-- fw-bold: judul tebal -->
+                        <h5 class="card-title fw-bold">Xiaomi G24i Gaming Monitor</h5>
+                        <!-- text-secondary: teks abu-abu untuk deskripsi -->
+                        <p class="card-text text-secondary">Monitor gaming 24 inci Full HD 1080p, refresh rate 180Hz, 
+                            panel IPS dengan response time 1ms, AMD FreeSync Premium untuk gameplay yang mulus.</p>
+                        <!-- btn btn-primary: tombol biru Bootstrap -->
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="gamepad.jpg" class="card-img-top" alt="Moon">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Sony DualSense Edge Wireless</h5>
-                    <p class="card-text text-secondary">Controller gaming premium dengan haptic feedback adaptif, 
-                        trigger tension adjustable, dan back button customizable untuk pengalaman gaming terbaik.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="mouse.jpg" class="card-img-top" alt="Mouse">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Logitech G Pro X Superlight 2</h5>
+                        <p class="card-text text-secondary">Mouse gaming ultralight hanya 60g, sensor HERO 25K presisi tinggi, 
+                            cocok untuk FPS kompetitif dengan respons click 40% lebih cepat.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="headset.jpg" class="card-img-top" alt="Moon">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Razer BlackShark V2 Pro</h5>
-                    <p class="card-text text-secondary">Headset gaming wireless dengan driver titanium 50mm, 
-                        surround sound THX 7.1, dan mic cardioid yang jernih untuk komunikasi tim.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="gamepad.jpg" class="card-img-top" alt="Gamepad">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Sony DualSense Edge Wireless</h5>
+                        <p class="card-text text-secondary">Controller gaming premium dengan haptic feedback adaptif, 
+                            trigger tension adjustable, dan back button customizable untuk pengalaman gaming terbaik.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card 5 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="keyboard.jpg" class="card-img-top" alt="Keyboard">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Keychron Q3 Mechanical Keyboard</h5>
-                    <p class="card-text text-secondary">Keyboard mechanical TKL dengan switch Gateron Pro, 
-                        hot-swappable, RGB backlight, dan body aluminium CNC untuk typing experience premium.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="headset.jpg" class="card-img-top" alt="Headset">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Razer BlackShark V2 Pro</h5>
+                        <p class="card-text text-secondary">Headset gaming wireless dengan driver titanium 50mm, 
+                            surround sound THX 7.1, dan mic cardioid yang jernih untuk komunikasi tim.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-                <img src="loq.png" class="card-img-top" alt="Moon" style="height: 280px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Lenovo LOQ 15</h5>
-                    <p class="card-text text-secondary">Laptop gaming bertenaga Intel Core i5 Gen 13 + NVIDIA RTX 4060, 
-                        layar 144Hz FHD, RAM 16GB, desain kokoh dengan sistem pendingin yang efisien.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="keyboard.jpg" class="card-img-top" alt="Keyboard">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Keychron Q3 Mechanical Keyboard</h5>
+                        <p class="card-text text-secondary">Keyboard mechanical TKL dengan switch Gateron Pro, 
+                            hot-swappable, RGB backlight, dan body aluminium CNC untuk typing experience premium.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="loq.png" class="card-img-top" alt="Laptop" style="height: 280px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Lenovo LOQ 15</h5>
+                        <p class="card-text text-secondary">Laptop gaming bertenaga Intel Core i5 Gen 13 + NVIDIA RTX 4060, 
+                            layar 144Hz FHD, RAM 16GB, desain kokoh dengan sistem pendingin yang efisien.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
 
 
     <!-- CONTACT FORM -->
+    <!-- mt-5: margin atas | mb-5: margin bawah | id="contact": target anchor dari navbar -->
     <div class="container mt-5 mb-5" id="contact">
+        <!-- text-primary: warna biru | mb-2: jarak bawah kecil -->
         <h3 class="text-primary mb-2">Contact Me</h3>
+        <!-- mb-4: jarak bawah agak besar sebelum form -->
         <p class="text-secondary mb-4">If you need help, please contact us via the form below</p>
 
         <form>
+            <!-- mb-3: jarak antar field form -->
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label text-secondary">Email</label>
+                <!-- form-control: styling input Bootstrap biar rapi dan responsif -->
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
             </div>
             
+            <!-- row + col-md-6: biar bikin 2 input sejajar di layar medium ke atas -->
+            <!-- mb-3 mb-md-0: di mobile ada jarak bawah, tapi hilang saat layar md ke atas -->
             <div class="row mb-3">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <label class="form-label text-secondary">First Name</label>
@@ -143,16 +172,20 @@
                 </div>
             </div>
 
+            <!-- mb-4: jarak bawah lebih besar sebelum checkbox -->
             <div class="mb-4">
                 <label for="exampleFormControlTextarea1" class="form-label text-secondary">Message</label>
+                <!-- rows="4": tinggi textarea 4 baris -->
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
             </div>
 
+            <!-- form-check: wrapper untuk checkbox | form-check-input: styling checkbox Bootstrap -->
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label text-secondary" for="exampleCheck1">I agree to the terms and conditions</label>
             </div>
             
+            <!-- px-4: padding kiri kanan tombol biar lebih lebar -->
             <button type="submit" class="btn btn-primary px-4">Send</button>
         </form>
     </div>
