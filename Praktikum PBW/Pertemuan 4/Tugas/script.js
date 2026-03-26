@@ -1,4 +1,4 @@
-// Fungsi arrow untuk menghitung
+// Fungsi sederhana buat menghitung matematika
 const hitung = (op, a, b) => {
     if (op === '+') return a + b;
     if (op === '-') return a - b;
@@ -13,17 +13,17 @@ function jalankanKalkulator() {
     let op = prompt("Masukkan operator (+, -, *, /, %):");
     let inputY = prompt("Masukkan angka kedua:");
 
-    // Ubah jadi number
+    // Buat ngubah yang tadinya string jadi number
     let x = Number(inputX);
     let y = Number(inputY);
 
-    // Siapkan array
+    // Buat nyimpen angka kedua dalam array
     let arrayAngka = [x, y];
 
-    // Panggil hitung dengan spread operator (...)
+    // Buat ngeluarin isi array menjadi parameter (a,b)
     let res = hitung(op, ...arrayAngka);
 
-    // Tampilkan hasil
+    // Buat nampilin hasil di console
     console.log("Hasil perhitungan: " + res);
-    alert("Hasil: " + res); // pakai alert supaya langsung muncul pop-up
+    alert("Hasil: " + res); // pakai alert biar langsung muncul pop-up
 }
